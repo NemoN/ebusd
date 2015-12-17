@@ -1,5 +1,5 @@
 /*
- * Copyright (C) John Baier 2014-2015 <ebusd@johnm.de>
+ * Copyright (C) John Baier 2014-2015 <ebusd@ebusd.eu>
  *
  * This file is part of ebusd.
  *
@@ -91,7 +91,7 @@ bool setLogLevel(const char* level)
 
 bool setLogFile(const char* filename)
 {
-	FILE* newFile = fopen(filename, "w");
+	FILE* newFile = fopen(filename, "a");
 	if (newFile == NULL)
 		return false;
 
